@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:random_avatar/random_avatar.dart';
 
 void main() {
@@ -43,12 +42,19 @@ class _MyHomePageState extends State<MyHomePage> {
           children: [
             FloatingActionButton(
               onPressed: () {
-                String svg = multiavatar(DateTime.now().toIso8601String(),
-                    trBackground: true);
-                _painters.add(SvgPicture.string(
-                  svg,
-                  height: 55,
-                ));
+                String svg = randomAvatarString(
+                  DateTime.now().toIso8601String(),
+                  trBackground: false,
+                );
+                print(svg);
+
+                _painters.add(
+                  randomAvatar(
+                    DateTime.now().toIso8601String(),
+                    height: 50,
+                    width: 52,
+                  ),
+                );
                 _controller.text = svg;
                 setState(() {});
               },
