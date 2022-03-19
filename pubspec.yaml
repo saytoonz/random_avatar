@@ -1,0 +1,19 @@
+name: random_avatar
+description: Random Avatar is a multicultural avatar maker. 12 billion unique multicultural avatars
+version: 0.1.5
+homepage: https://github.com/saytoonz/random_avatar
+documentation: https://github.com/saytoonz/random_avatar
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  crypto: ^3.0.0
+  flutter_svg: ^1.0.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
