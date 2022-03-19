@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:random_avatar/random_avatar.dart';
 
@@ -46,7 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   DateTime.now().toIso8601String(),
                   trBackground: false,
                 );
-                print(svg);
+                log(svg);
 
                 _painters.add(
                   randomAvatar(
