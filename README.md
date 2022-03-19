@@ -23,23 +23,23 @@ dependencies:
 get avatar string
 
 ```dart
-var svgCode = randomAvatarString('saytoonz');
+String svgCode = randomAvatarString('saytoonz');
 ```
 get avatar string with transparent background
 
 ```dart
-var svgCode = randomAvatarString('saytoonz', trBackground: true);
+String svgCode = randomAvatarString('saytoonz', trBackground: true);
 ```
 
 get avatar svg widget
 
 ```dart
-var svgCode = randomAvatar('saytoonz', height: 50, width: 50);
+Widget svgCode = randomAvatar('saytoonz', height: 50, width: 50);
 ```
 get avatar svg widget with transparent background
 
 ```dart
-var svgCode = randomAvatar('saytoonz', trBackground: true, height: 50, width: 50);
+Widget svgCode = randomAvatar('saytoonz', trBackground: true, height: 50, width: 50);
 ```
 
 check the example (https://github.com/saytoonz/random_avatar/tree/main/exemple)
@@ -65,7 +65,7 @@ More info can be found in the `random_avatar.dart` file comments.
 ### License ###
 
 
-A Dart implementation based on [random_avatar](https://github.com/multiavatar) script for Flutter apps.
+A Dart implementation based on [multiavatar](https://github.com/multiavatar) script for Flutter apps.
 
 
 ### Screenshots ###
