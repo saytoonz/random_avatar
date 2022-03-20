@@ -30,7 +30,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  TextEditingController _controller = TextEditingController();
+  final TextEditingController _controller = TextEditingController();
   final List<Widget> _painters = <Widget>[];
 
   @override
@@ -61,10 +61,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 setState(() {});
               },
               tooltip: 'Generate',
-              child: Icon(Icons.gesture),
+              child: const Icon(Icons.gesture),
             ),
-            SizedBox(height: 20),
-          ]..addAll(_painters),
+            const SizedBox(height: 20),
+            ..._painters,
+          ],
         ),
       ),
     );
