@@ -62,6 +62,12 @@ More info can be found in the `random_avatar.dart` file comments.
 
 
 
+### Support the package (optional) ###
+If you find this package useful, you can support it for free by giving it a thumbs up at the top of this page.  Here's another option to support the package:
+<a href="https://www.buymeacoffee.com/saytoonz"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=saytoonz&button_colour=5F7FFF&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" /></a>
+
+
+
 ### License ###
 
 
