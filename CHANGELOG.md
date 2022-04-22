@@ -12,3 +12,6 @@
 
 ## 0.0.5
 * Example main file updated.
+
+## 0.0.6
+* Support this package
