@@ -28,7 +28,7 @@ Widget randomAvatar(
     randomAvatarString(string, trBackground: trBackground),
     key: key,
     width: width,
-    height: 55,
+    height: height,
     fit: fit,
     alignment: alignment,
     matchTextDirection: matchTextDirection,
