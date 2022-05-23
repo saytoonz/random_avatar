@@ -15,3 +15,6 @@
 
 ## 0.0.6
 * Support this package
+
+## 0.0.7
+* Height issue fixed
