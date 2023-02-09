@@ -46,14 +46,14 @@ class _MyHomePageState extends State<MyHomePage> {
           children: [
             FloatingActionButton(
               onPressed: () {
-                String svg = randomAvatarString(
+                String svg = RandomAvatarString(
                   DateTime.now().toIso8601String(),
                   trBackground: false,
                 );
                 log(svg);
 
                 _painters.add(
-                  randomAvatar(
+                  RandomAvatar(
                     DateTime.now().toIso8601String(),
                     height: 50,
                     width: 52,

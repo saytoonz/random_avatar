@@ -1,3 +1,5 @@
+// ignore_for_file: non_constant_identifier_names
+
 library multiavatar;
 
 import 'dart:convert';
@@ -5,7 +7,7 @@ import 'package:crypto/crypto.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-Widget randomAvatar(
+Widget RandomAvatar(
   String string, {
   bool trBackground = false,
   Key? key,
@@ -16,16 +18,13 @@ Widget randomAvatar(
   bool matchTextDirection = false,
   bool allowDrawingOutsideViewBox = false,
   WidgetBuilder? placeholderBuilder,
-  Color? color,
-  BlendMode colorBlendMode = BlendMode.srcIn,
   String? semanticsLabel,
   bool excludeFromSemantics = false,
-  Clip clipBehavior = Clip.hardEdge,
-  bool cacheColorFilter = false,
-  SvgTheme? theme,
+  ColorFilter? colorFilter,
+  SvgTheme theme = const SvgTheme(),
 }) {
   return SvgPicture.string(
-    randomAvatarString(string, trBackground: trBackground),
+    RandomAvatarString(string, trBackground: trBackground),
     key: key,
     width: width,
     height: height,
@@ -34,12 +33,9 @@ Widget randomAvatar(
     matchTextDirection: matchTextDirection,
     allowDrawingOutsideViewBox: allowDrawingOutsideViewBox,
     placeholderBuilder: placeholderBuilder,
-    color: color,
-    colorBlendMode: colorBlendMode,
     semanticsLabel: semanticsLabel,
     excludeFromSemantics: excludeFromSemantics,
-    clipBehavior: clipBehavior,
-    cacheColorFilter: cacheColorFilter,
+    colorFilter: colorFilter,
     theme: theme,
   );
 }
@@ -47,7 +43,7 @@ Widget randomAvatar(
 /// required String string,  random string to use as a start of svg generation
 /// bool trBackground  = true; Set background color to transparent
 
-String randomAvatarString(String string, {bool trBackground = false}) {
+String RandomAvatarString(String string, {bool trBackground = false}) {
   string += '';
 
   Map<String, Map<String, Map<String, List<String>>>> themes = {

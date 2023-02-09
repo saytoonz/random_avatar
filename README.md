@@ -23,23 +23,23 @@ dependencies:
 get avatar string
 
 ```dart
-String svgCode = randomAvatarString('saytoonz');
+String svgCode = RandomAvatarString('saytoonz');
 ```
 get avatar string with transparent background
 
 ```dart
-String svgCode = randomAvatarString('saytoonz', trBackground: true);
+String svgCode = RandomAvatarString('saytoonz', trBackground: true);
 ```
 
 get avatar svg widget
 
 ```dart
-Widget svgCode = randomAvatar('saytoonz', height: 50, width: 50);
+Widget svgCode = RandomAvatar('saytoonz', height: 50, width: 50);
 ```
 get avatar svg widget with transparent background
 
 ```dart
-Widget svgCode = randomAvatar('saytoonz', trBackground: true, height: 50, width: 50);
+Widget svgCode = RandomAvatar('saytoonz', trBackground: true, height: 50, width: 50);
 ```
 
 check the example (https://github.com/saytoonz/random_avatar/tree/main/exemple)
@@ -60,14 +60,6 @@ The string of characters is also the input for the Multiavatar package, which co
 `474747474747` - this is the 12,230,590,464th avatar (or the 16th initial avatar + its "C" color theme).
 
 More info can be found in the `random_avatar.dart` file comments.
-
-
-
-
-### Support the package (optional) ###
-If you find this package useful, you can support it for free by giving it a thumbs up at the top of this page.  Here's another option to support the package: <a href="https://www.buymeacoffee.com/saytoonz" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
-
-
 
 
 ### License ###
