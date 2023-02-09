@@ -22,7 +22,7 @@ Widget randomAvatar(
   bool excludeFromSemantics = false,
   Clip clipBehavior = Clip.hardEdge,
   bool cacheColorFilter = false,
-  SvgTheme? theme,
+  SvgTheme theme = const SvgTheme(),
 }) {
   return SvgPicture.string(
     randomAvatarString(string, trBackground: trBackground),
