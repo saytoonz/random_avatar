@@ -18,12 +18,9 @@ Widget RandomAvatar(
   bool matchTextDirection = false,
   bool allowDrawingOutsideViewBox = false,
   WidgetBuilder? placeholderBuilder,
-  Color? color,
-  BlendMode colorBlendMode = BlendMode.srcIn,
   String? semanticsLabel,
   bool excludeFromSemantics = false,
-  Clip clipBehavior = Clip.hardEdge,
-  bool cacheColorFilter = false,
+  ColorFilter? colorFilter,
   SvgTheme theme = const SvgTheme(),
 }) {
   return SvgPicture.string(
@@ -36,12 +33,9 @@ Widget RandomAvatar(
     matchTextDirection: matchTextDirection,
     allowDrawingOutsideViewBox: allowDrawingOutsideViewBox,
     placeholderBuilder: placeholderBuilder,
-    color: color,
-    colorBlendMode: colorBlendMode,
     semanticsLabel: semanticsLabel,
     excludeFromSemantics: excludeFromSemantics,
-    clipBehavior: clipBehavior,
-    cacheColorFilter: cacheColorFilter,
+    colorFilter: colorFilter,
     theme: theme,
   );
 }
