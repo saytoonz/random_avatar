@@ -42,7 +42,7 @@ get avatar svg widget with transparent background
 Widget svgCode = RandomAvatar('saytoonz', trBackground: true, height: 50, width: 50);
 ```
 
-check the example (https://github.com/saytoonz/random_avatar/tree/main/exemple)
+check the example (https://github.com/saytoonz/random_avatar/tree/main/example)
 
 
 ### Info ###
